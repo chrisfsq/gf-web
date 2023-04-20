@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  background: #2a2842;
+  /*background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);  */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #131023;
+  width: 400px;
+  height: 500px;
+
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
+}
+
+h1 {
+  color: #ccc;
+  font-size: 17pt;
+  margin-top: -25px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #19afd1;
+}
+
+label {
+  color: #ccc;
+  margin-top: 20px
+}
+
+input {
+  padding: 8px;
+  border-radius: 2px;
+  color: #19afd1;
+  background: #2a2842;
+  border: 2px solid #19afd1;
+}
+
+input[type="submit"] {
+  animation: fadeIn 1s;
+  background: #19afd1;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bolder;
+  margin-top: 30px;
+  transition: 1s;
+}
+
+input[type="submit"]:hover {
+  background: #ffffff;
+  color: #19afd1;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+
+}
+
+.terms p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 20px 0px 0px 10px;
+  color: #ccc;
+}
+
+.container {
+  background-image: url('/assets/img/bg-container.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  width: 400px;
+  height: 500px;
+}
+
+.container img {
+  margin-top: -30px;
+  width: 100%;
+  animation: float 3s ease-in-out infinite;
+}
+
+.form-content img {
+  width: 200px;
+  margin-top: -120px;
+  margin-bottom: 40px;
+  align-self: center;
+  position: relative;
+}
+
+.switch {
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 40px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 16px;
+  left: 3px;
+  position: absolute;
+  transition: .4s;
+  width: 16px;
+}
+
+input:checked+.slider {
+  background-color: #19afd1;
+}
+
+input:checked+.slider:before {
+  transform: translateX(18px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translatey(0)
+  }
+
+  50% {
+    transform: translatey(-30px)
+  }
+}
+
+/*LOGIN FORM STYLE8*/
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient( 109.6deg,  rgba(231,76,60,1) 11.2%, rgba(203,67,53,1) 91.1% );
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  background-color: #131023;
+  width: 400px;
+  height: 500px;
+
+}
+
+.form-content-login {
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
+}
+
+.form-content-login img {
+  width: 200px;
+  margin-top: -120px;
+  margin-bottom: 40px;
+  align-self: center;
+  position: relative;
+}
+.container-login {
+  background-image: url('/assets/img/bg-container2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  width: 400px;
+  height: 500px;
+}
+
+.container-login img {
+  width: 500px;
+  animation: fadeIn 3s;
+}
+
+.login h1 {
+  color: #ccc;
+  font-size: 17pt;
+  margin-top: -25px;
+  text-align: center;
+}
+
+.login a {
+  text-decoration: none;
+  color: #d11919be;
+}
+
+.login label {
+  color: #ccc;
+  margin-top: 30px
+}
+
+.login input {
+  padding: 8px;
+  border-radius: 2px;
+  color: #d11919be;
+  background: #2a2842;
+  border: 2px solid #d11919be;
+}
+
+.login input[type="submit"] {
+  animation: fadeIn 1s;
+  background: #d11919be;
+  cursor: pointer;
+  color: #fff;
+  width: 260px;
+  align-self: center;
+  font-weight: bolder;
+  margin-top: 10px;
+  transition: 1s;
+}
+
+.login input[type="submit"]:hover {
+  background: #ffffff;
+  color: #d11919be;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.save-pass {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.save-pass p{
+  color: #d11919be;
+  padding: 10px;
+}
